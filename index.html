@@ -1,0 +1,101 @@
+<html>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> 
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dd41cbb229.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    
+
+
+<main class="container" id="mainCont">
+
+<div class="innercont">
+<h1>My Projects</h1>
+
+<div class="turnthelightson" id="turnthelightson">
+  <p>Turn the Lights on!</p>
+<button id="turnthelightsonbtn"></button>
+<i class="fas fa-reply"></i>
+<br><br>
+
+</div>
+
+
+<div class="portfolio">
+  <section class="portfoliosection">
+    <div class="info">Here is my CV. Click <a href="cv.html" target="blank">here</a>
+      to view the full document.
+      </div>
+    <div class="info">
+      <iframe id="frame1" class="frame" src="cv.pdf" title="My first site"></iframe>
+    </div>
+  </section>
+  <section class="portfoliosection">
+    <div class="info">Here is my first site. Click on a menu to open the site in a new tab</div>
+    <div class="info">
+      <iframe id="frame2" class="frame" src="http://julius.xs4all.nl:8680/ok_site/index.html" title="My first site"></iframe>
+    </div>
+  </section>
+  <section class="portfoliosection">
+    <div class="info">Here is my first app</div>
+    <div class="info">
+      <iframe id="frame3" class="frame" src="#" title="My first site"></iframe>
+    </div>
+  </section>
+</div>
+
+<div class="mylinks">
+  <section class="mylinksflex">
+    <div>Phone: +31630346227</div>
+    <div>Email: annamikhailenko@gmail.com</div>
+    <a href="https://github.com/AnnaMTZ" target="blank">Github</a>
+  </section>
+  <section class="mylinksflex">
+   <div><a href="https://www.linkedin.com/in/anna-mykhailenko-50143468/" target="blank">LinkedIn</a></div>
+    <div><a href="https://www.instagram.com/" target="blank">Instagram</a></div>
+    <div><a href="https://www.facebook.com/annamikhailenko86/" target="blank">Facebook</a></div>
+  </section>
+</div>
+
+
+</div>
+</main>
+
+<script>
+
+document.getElementById('turnthelightsonbtn').addEventListener('click', turnTheLight);
+const theButton = document.getElementById('turnthelightson');
+const theMainCont = document.getElementById('mainCont');
+const theFrame1 = document.getElementById('frame1');
+const theFrame2 = document.getElementById('frame2');
+const theFrame3 = document.getElementById('frame3');
+
+
+function turnTheLight () {
+  // event.preventDefault(); // how to prevent page from refreshing
+  theMainCont.classList.toggle('containerToAdd');
+  theButton.style.display = "none";
+  theFrame1.classList.toggle('displayFrame');
+  theFrame2.classList.toggle('displayFrame');
+  theFrame3.classList.toggle('displayFrame');
+}
+
+
+
+
+
+</script>
+
+  </body>
+  </html>
+  
